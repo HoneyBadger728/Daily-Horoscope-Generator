@@ -10,8 +10,9 @@ const financialOutlook = () => {
 }
 
 
+
 const getMyHoroscope = () => {
-    console.log(`Your day will be ${dayOutlook()}.`)
+    console.log(`Your day will be ${dayOutlook()}. When it comes to money, you should ${financialOutlook()}.`)
 }
 
 getMyHoroscope()
