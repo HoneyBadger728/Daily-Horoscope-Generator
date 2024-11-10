@@ -4,7 +4,7 @@ const dayOutlook = () => {
 }
 
 const financialOutlook = () => {
-    const financialOutlooks = [' expect to experience a not-so-great depression', `soon be enjoying champagne wishes and caviar dreams`, 
+    const financialOutlooks = ['expect to experience a not-so-great depression', `soon be enjoying champagne wishes and caviar dreams`, 
         `look for a great investment opportunity`, `be able to afford that avocado toast you've always wanted to try`];
     return financialOutlooks[Math.floor(Math.random() * 4)]
 }
