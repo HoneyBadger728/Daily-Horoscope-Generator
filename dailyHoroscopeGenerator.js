@@ -16,10 +16,9 @@ const loveOutlook = () => {
     return loveOutlooks[Math.floor(Math.random() * 5)]
 }
 
-console.log(loveOutlook())
 
 const getMyHoroscope = () => {
-    console.log(`Your day will be ${dayOutlook()}. When it comes to money, you should ${financialOutlook()}.`)
+    console.log(`Your day will be ${dayOutlook()}. When it comes to money, you should ${financialOutlook()}. In matters of the heart, ${loveOutlook()}.`)
 }
 
 getMyHoroscope()
