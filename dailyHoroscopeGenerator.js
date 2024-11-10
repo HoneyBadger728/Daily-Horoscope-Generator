@@ -9,7 +9,14 @@ const financialOutlook = () => {
     return financialOutlooks[Math.floor(Math.random() * 4)]
 }
 
+const loveOutlook = () => {
+    const loveOutlooks = [`you're better off joining a convent`, 'you should remember what Whitney Houston said about the greatest love of all', 
+        `think about adopting an animal from a local shelter`, `you are about to find a unicorn`, 
+        `keep in mind that 'you miss 100% of the shots you don't take' - Wayne Gretzky`]
+    return loveOutlooks[Math.floor(Math.random() * 5)]
+}
 
+console.log(loveOutlook())
 
 const getMyHoroscope = () => {
     console.log(`Your day will be ${dayOutlook()}. When it comes to money, you should ${financialOutlook()}.`)
