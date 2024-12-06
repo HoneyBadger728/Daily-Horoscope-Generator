@@ -18,7 +18,10 @@ const loveOutlook = () => {
 
 
 const getMyHoroscope = () => {
-    console.log(`Your day will be ${dayOutlook()}. When it comes to money, you should ${financialOutlook()}. In matters of the heart, ${loveOutlook()}.`)
+    return `Your day will be ${dayOutlook()}. When it comes to money, you should ${financialOutlook()}. In matters of the heart, ${loveOutlook()}.`
 }
 
-getMyHoroscope()
+document.getElementById("generate-btn").addEventListener("click", () => {
+    const horoscopeText = getMyHoroscope();
+    document.getElementById("horoscope").textContent = horoscopeText;
+});
